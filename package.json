@@ -1,0 +1,47 @@
+{
+    "title": "IBM Cloud Team ISC 2022",
+    "name": "ibmcloudteam-isc-2022",
+    "version": "7.0.5",
+    "scripts": {
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
+    },
+    "description": "See what's going on with F5 and IBM Cloud for 2022",
+    "keywords": [
+        "f5",
+        "ibm",
+        "isc2022"
+    ],
+    "homepage": "https://github.com/jgruberf5/ibmcloud_isc2022_web_app",
+    "bugs": {
+        "url": "https://github.com/jgruberf5/ibmcloud_isc2022_web_app/issues",
+        "email": "j.gruber@f5.com"
+    },
+    "license": "Apache2.0",
+    "author": "John Gruber",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jgruberf5/ibmcloud_isc2022_web_app.git"
+    },
+    "dependencies": {
+        "bootstrap": "5.1.3"
+    },
+    "devDependencies": {
+        "autoprefixer": "10.3.7",
+        "browser-sync": "2.27.5",
+        "chokidar": "3.5.2",
+        "concurrently": "6.3.0",
+        "postcss": "8.3.9",
+        "prettier": "2.4.1",
+        "pug": "3.0.2",
+        "sass": "1.43.2",
+        "shelljs": "0.8.4",
+        "upath": "2.0.1"
+    }
+}
